@@ -25,7 +25,7 @@ function App() {
       <p>Loading Questions ...</p>
       <QuestionCard />
       <button className="next" onClick={nextQuestion}>
-        Next
+        Next Question
       </button>
     </div>
   );
