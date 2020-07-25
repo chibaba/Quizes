@@ -4,7 +4,9 @@ import { fetchQuizQuestions } from './API';
 import QuestionCard from './components/QuestionCard';
 import  {QuestionState, Difficulty} from './API';
 
-type AnswerObject = {
+import {GlobalStyle, Wrapper } from './App.styles'
+
+export type AnswerObject = {
   question: string,
   answer: string,
   correct: boolean;
@@ -64,11 +66,22 @@ function App() {
   }
 
   const nextQuestion = () => {
+    // move to the next question if not the last question
 
+    const  nextQuestion = number + 1;
+
+    if(nextQuestion === TOTAL_QUESTIONS) {
+     setGameOver(true);
+
+  } else {
+    setNumber(nextQuestion)
   }
+}
 
   return (
-    <div className="App">
+    <>
+    <GlobalStyle/>
+    <Wrapper>
       <h1>Quiz</h1>
       {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
 
@@ -77,7 +90,7 @@ function App() {
       </button>
       ) : null
       }
-      {! gameOver ? <p className = "score">Score:</p> : null }
+      {! gameOver ? <p className = "score">Score:{score}</p> : null }
       {loading && <p>Loading Questions ...</p> }
       {!loading && !gameOver && (
       <QuestionCard 
@@ -95,7 +108,8 @@ function App() {
         Next Question
       </button>
       ) : null}
-    </div>
+    </Wrapper>
+    </>
   );
 }
 
