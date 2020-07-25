@@ -81,7 +81,7 @@ function App() {
   return (
     <>
     <GlobalStyle/>
-    <div className="App">
+    <Wrapper>
       <h1>Quiz</h1>
       {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
 
@@ -108,7 +108,7 @@ function App() {
         Next Question
       </button>
       ) : null}
-    </div>
+    </Wrapper>
     </>
   );
 }
