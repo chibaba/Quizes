@@ -1,7 +1,7 @@
 import styled, {createGlobalStyle} from 'styled-components'
 
 //@ts-ignore
-import BGImage from './images/quiz.jpg';
+import BGImage from './images/quiz3.gif';
 
 export const GlobalStyle = createGlobalStyle `
   html {
@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle `
       margin: 0;
       padding: 0 20px;
       display: flex;
-      justify-content: canter;
+      justify-content: center;
   }
 
   * {
