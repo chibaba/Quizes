@@ -1,4 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### A Simple quiz app
 [Quizz App](https://quizzical-noyce-02cae1.netlify.app/)
