@@ -1,7 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-[Quizz App](`https://quizzical-noyce-02cae1.netlify.app/`)
 
 ### A Simple quiz app
+[Quizz App](https://quizzical-noyce-02cae1.netlify.app/)
+
 
 ##### Built with react and typescript
 #### fetches api from `TRIVIA` and displays to view
